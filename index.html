@@ -28,11 +28,16 @@
             }
 
             aside {
-                width: 2in;
+                border-right: 3px solid #000;
+                padding-right: 0.7em;
+                margin-right: 1em;
+                min-width: 240px;
+                flex-grow: 1;
             }
 
-            .flex {
-                display: flex;
+            aside img {
+                margin: 4em auto;
+                display: block;
             }
 
             img {
@@ -46,6 +51,75 @@
             a {
                 display: block;
             }
+
+            header {
+                height: 2in;
+            }
+
+            header h1,
+            header h2 {
+                color: #000;
+            }
+
+            .columns {
+                display: flex;
+            }
+
+            .column {
+                position: relative;
+            }
+
+            .column.wide {
+                flex-grow: 1;
+            }
+
+            .fish {
+                text-align: center;
+            }
+
+            .fish img {
+                display: block;
+                margin: 0 auto;
+            }
+
+            h1, h2, h3, h4, h5, h6 {
+                margin: 0;
+                padding: 0;
+            }
+
+            footer {
+                margin: 2em 0 1em;
+                text-align: center;
+                color: #fff;
+                text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+            }
+
+            h3 {
+                color: #333;
+            }
+
+            h4 {
+                margin-top: 0.3em;
+                color: #555;
+            }
+
+            ul {
+                margin-top: 0.5em;
+                margin-bottom: 2em;
+                padding-left: 1em;
+            }
+
+            li {
+                color: #555;
+            }
+
+            p, span {
+                color: #777;
+            }
+
+            p {
+                margin: 0.5em 0;
+            }
         </style>
 
         <script>
@@ -55,98 +129,186 @@
 
     <body>
         <article>
-            <header class="flex">
-                <div class="column">
-                    <h2>Hi there!</h2>
-                    <h1>
-                        I'm Rachel (fish)
+            <header class="columns">
+                <div class="column wide">
+                    <div class="columns">
+                        <div class="column">
+                            <h2>Hi there!</h2>
+                            <h1>
+                                I'm Rachel
+                            </h1>
+                        </div>
 
-                        <img src="./img/fish.svg" class="flip">
-                    </h1>
+                        <div class="column fish">
+                            <img src="./img/fish.svg" class="flip">
+                            (Fish)
+                        </div>
+                    </div>
                 </div>
 
                 <div class="column">
-                    <a href="#">rachel@wetfish.net</a>
-                    <a href="#">https://github.com/itsrachelfish</a>
+                    <a href="mailto:rachel@wetfish.net">rachel@wetfish.net</a>
+                    <a href="https://github.com/itsrachelfish">https://github.com/itsrachelfish</a>
 
                     <h3>A full-stack software developer</h3>
                     <h3>Living in Denver, Colorado</h3>
                 </div>
             </header>
 
-            <section class="flex">
-                <aside>
-                    <h3>## Skills</h3>
-                    - Software architecture
-                    - API development
-                    - UI/UX
-                    - Information security
-                    - HIPAA &amp; PCI Compliance
+            <section class="columns">
+                <aside class="column">
+                    <h3>Skills</h3>
 
-                    <h3>## Technologies</h3>
-                    <h4>### Expert</h4>
-                    - JavaScript
-                    - Node.js
-                    - Vue
-                    - PHP
-                    - Laravel
-                    - Linux
-                    - Nginx
+                    <ul>
+                        <li><span>Software Architecture</span></li>
+                        <li><span>API Development</span></li>
+                        <li><span>UI/UX</span></li>
+                        <li><span>Information security</span></li>
+                        <li><span>HIPAA &amp; PCI Compliance</span></li>
+                        <li><span>Payment processing</span></li>
+                    </ul>
 
-                    <h4>### Knowledgeable</h4>
-                    - TypeScript
-                    - Docker
-                    - Redis
-                    - ELK Stack
-                    - Bitcoin
-                    - Ethereum
-                    - Cypress
-                    - Perl
-                    - Python
+                    <h3>Technologies I am...</h3>
+                    <h4>An Expert Of</h4>
+                    <ul>
+                        <li><span>JavaScript</span></li>
+                        <li><span>Node.js</span></li>
+                        <li><span>Vue</span></li>
+                        <li><span>PHP</span></li>
+                        <li><span>Laravel</span></li>
+                        <li><span>Braintree</span></li>
+                        <li><span>Linux</span></li>
+                        <li><span>Nginx</span></li>
+                    </ul>
 
-                    <h4>### Familiar</h4>
-                    - OpenCV
-                    - Wordpress
-                    - ExpressionEngine
-                    - Ember
-                    - React
-                    - Drupal
-                    - Apache
+                    <h4>Knowledgeable Of</h4>
+                    <ul>
+                        <li><span>TypeScript</span></li>
+                        <li><span>Docker</span></li>
+                        <li><span>Stripe</span></li>
+                        <li><span>Redis</span></li>
+                        <li><span>ELK Stack</span></li>
+                        <li><span>Bitcoin</span></li>
+                        <li><span>Ethereum</span></li>
+                        <li><span>Cypress</span></li>
+                        <li><span>Perl</span></li>
+                        <li><span>Python</span></li>
+                    </ul>
+
+                    <h4>Familiar With</h4>
+                    <ul>
+                        <li><span>OpenCV</span></li>
+                        <li><span>Shopify</span></li>
+                        <li><span>Wordpress</span></li>
+                        <li><span>ExpressionEngine</span></li>
+                        <li><span>Ember</span></li>
+                        <li><span>React</span></li>
+                        <li><span>Drupal</span></li>
+                        <li><span>Apache</span></li>
+                    </ul>
 
                     <img src="./img/servers.svg">
                 </aside>
 
-                <main>
+                <main class="column">
+                    <h3>About Me</h3>
                     <p>
                         Coding professionally since 2008, I've worked for an exciting mix of clients and startups.
                         Learning management software for paramedics, rewards systems for hotels, medical document storage, and cryptocurrency trading platforms&mdash;just to name a few.
-                        After over a decade in the field I've become an expert at building products which are beautiful and easy to use without compromising user privacy.
+                        After more than a decade in the field I've become an expert at building products which are beautiful and easy to use without compromising user privacy.
                     </p>
 
                     <h3>
-                        <img src="./img/work.svg">
+                        <img src="./img/work.svg" class="icon">
                         Work Experience
                     </h3>
 
-                    <h4>- Casa</h4>
-                    - 2018 - 2019
-                    - Role: Lead UI Developer
+                    <div class="columns">
+                        <div class="column wide">
+                            <h4>Casa</h4>
 
-                    <h4>- Radar Relay</h4>
-                    - 2017 - 2018
-                    - Role: API Developer
+                            <div class="date">
+                                2018 - 2019
+                            </div>
 
-                    <h4>- HighBridge Creative</h4>
-                    - 2013 - 2016
-                    - Role: Full stack developer & devops
+                            <div class="role">
+                                Role: Lead UI Developer
+                            </div>
 
-                    <h4>- Freelance</h4>
-                    - 2008 - 2012
-                    - Role: Full stack developer & sysadmin
+                            <p>
+                                Boy Casa sure was fun...
+                            </p>
+                        </div>
 
+                        <div class="column">
+                            <img src="./img/casa.jpg">
+                        </div>
+                    </div>
+
+                    <div class="columns">
+                        <div class="column wide">
+                            <h4>Radar Relay</h4>
+
+                            <div class="date">
+                                2017 - 2018
+                            </div>
+
+                            <div class="role">
+                                Role: API Developer
+                            </div>
+
+                            <p>
+                                Radar was okay
+                            </p>
+                        </div>
+
+                        <div class="column">
+                            <img src="./img/radar.jpg">
+                        </div>
+                    </div>
+
+                    <div class="columns">
+                        <div class="column wide">
+                            <h4>HighBridge Creative</h4>
+
+                            <div class="date">
+                                2013 - 2016
+                            </div>
+
+                            <div class="role">
+                                Role: Full stack & devops
+                            </div>
+
+                            <p>
+                                Hello world
+                            </p>
+                        </div>
+
+                        <div class="column">
+                            <img src="./img/highbridge.jpg">
+                        </div>
+                    </div>
+
+                    <div class="columns">
+                        <div class="column wide">
+                            <h4>Freelance</h4>
+
+                            <div class="date">
+                                2008 - 2012
+                            </div>
+
+                            <div class="role">
+                                Role: Full stack & sysadmin
+                            </div>
+
+                            <p>
+                                Hello world
+                            </p>
+                        </div>
+                    </div>
 
                     <h3>
-                        <img src="./img/open-source.svg">
+                        <img src="./img/open-source.svg" class="icon">
                         Open Source On The Side
                     </h3>
 
@@ -154,23 +316,65 @@
                         In addition to the work I do professionally, I also maintain a number of open-source projects in my free time.
                     </p>
 
-                    <h4>- Wetfish</h4>
-                    - 2005 - Today
-                    - Role: Internet Mom
+                    <div class="columns">
+                        <div class="column wide">
+                            <h4>Apogaea</h4>
 
-                    <h4>- OpenKore</h4>
-                    - 2012 - Today
-                    - Role: Project Maintainer
+                            <div class="date">
+                                2015 - Today
+                            </div>
 
-                    <h4>- Apogaea</h4>
-                    - 2015 - Today
-                    - Role: Lead Software Developer
+                            <div class="role">
+                                Role: Lead Software Developer
+                            </div>
+
+                            <p>
+                                Hello world
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="columns">
+                        <div class="column wide">
+                            <h4>OpenKore</h4>
+
+                            <div class="date">
+                                2012 - Today
+                            </div>
+
+                            <div class="role">
+                                Role: Project Maintainer
+                            </div>
+
+                            <p>
+                                Hello world
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="columns">
+                        <div class="column wide">
+                            <h4>Wetfish</h4>
+
+                            <div class="date">
+                                2005 - Today
+                            </div>
+
+                            <div class="role">
+                                Role: Internet Mom
+                            </div>
+
+                            <p>
+                                Hello world
+                            </p>
+                        </div>
+                    </div>
                 </main>
             </section>
         </article>
 
         <footer>
-            Like what you see? Hire me! ;)
+            Good attention to detail.
         </footer>
     </body>
 </html>
