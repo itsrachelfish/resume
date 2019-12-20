@@ -16,6 +16,7 @@
                 margin: 0;
                 padding: 0;
                 background-color: #f0f0f8;
+                font-family: "DejaVu Sans";
             }
 
             article {
@@ -24,7 +25,7 @@
                 margin: 2em auto 1em;
                 padding: 1em;
                 border-radius: 8px;
-                box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, .2);
+/*                box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, .2); */
             }
 
             aside {
@@ -63,6 +64,7 @@
 
                 font-family: 'Dosis';
                 font-size: 20px;
+                letter-spacing: 0.1px;
             }
 
             header h1 {
@@ -92,6 +94,8 @@
                 margin: 0;
                 padding: 0;
                 font-family: 'Dosis';
+                letter-spacing: 0.1px;
+                font-weight: normal;
             }
 
             footer {
@@ -114,7 +118,7 @@
 
             ul {
                 margin-top: 0.4em;
-                margin-bottom: 2em;
+                margin-bottom: 1.6em;
                 padding-left: 1em;
             }
 
@@ -131,10 +135,6 @@
             }
 
             .margin-top {
-                margin-top: 11px;
-            }
-
-            .job.margin-top {
                 margin-top: 32px;
             }
 
@@ -159,7 +159,27 @@
 
             @font-face {
                 font-family: 'Dosis';
+                src: url('./font/Dosis-Bold.ttf');
+            }
+
+            @font-face {
+                font-family: 'Dosis Variable';
                 src: url('./font/Dosis-VF.ttf');
+            }
+
+            @font-face {
+                font-family: 'DejaVu Sans';
+                src: url('./font/DejaVuSans.ttf');
+            }
+
+            @font-face {
+                font-family: 'DejaVu Sans Bold';
+                src: url('./font/DejaVuSans-Bold.ttf');
+            }
+
+            @font-face {
+                font-family: 'DejaVu Sans Italic';
+                src: url('./font/DejaVuSans-Oblique.ttf');
             }
 
             main h4 {
@@ -167,19 +187,28 @@
             }
 
             .date {
-                font-family: sans-serif;
+                font-family: "DejaVu Sans Bold";
                 font-size: 12px;
                 color: #aaa;
                 margin-left: 0.5em;
             }
 
             .role {
-                font-weight: bold;
+                font-family: "DejaVu Sans Bold";
                 color: #111;
             }
 
             .job img {
                 margin-left: 0.2em;
+            }
+
+            i {
+                font-style: normal;
+                font-family: "DejaVu Sans Italic";
+            }
+
+            a {
+                font-family: 'Dosis Variable';
             }
         </style>
 
@@ -191,7 +220,7 @@
     <body>
         <article>
             <header class="columns">
-                <div class="column" style="text-align: right; margin-left: 3em; margin-right: 1em;">
+                <div class="column" style="text-align: right; margin-left: 3.33em; margin-right: 1em;">
                     <h2>Rachel Fish</h2>
 
                     <div class="margin-around">
@@ -213,8 +242,7 @@
                     <h3>Skills</h3>
                     <ul>
                         <li><span>Software architecture</span></li>
-                        <li><span>API development</span></li>
-                        <li><span>UI/UX</span></li>
+                        <li><span>UI/UX development</span></li>
                         <li><span>Information security</span></li>
                         <li><span>HIPAA &amp; PCI compliance</span></li>
                         <li><span>Payment processing</span></li>
@@ -296,8 +324,8 @@
                         </div>
 
                         <p>
-                            Created the UI for two hardware products using Vue.
-                            Used Docker to manage software running on consumer devices.
+                            Wrote Vue front-end code for for embedded Linux hardware devices.
+                            Used Docker to manage software running on consumer products.
                             Developed an e-commerce checkout system with Stripe which ensured all customer data was encrypted.
                             Worked extensively with the Bitcoin Lightning network.
                         </p>
