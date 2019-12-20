@@ -23,7 +23,7 @@
                 width: 8.5in;
                 margin: 2em auto 1em;
                 padding: 1em;
-                border-radius: 4px;
+                border-radius: 8px;
                 box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, .2);
             }
 
@@ -36,8 +36,10 @@
             }
 
             aside img {
-                margin: 6em auto;
-                display: block;
+                position: absolute;
+                bottom: 0;
+                left: calc(50% - 0.55in);
+                margin-bottom: 5em;
             }
 
             img {
@@ -168,13 +170,16 @@
                 font-family: sans-serif;
                 font-size: 12px;
                 color: #aaa;
+                margin-left: 0.5em;
             }
 
             .role {
                 font-weight: bold;
             }
 
-
+            .job img {
+                margin-left: 0.2em;
+            }
         </style>
 
         <script>
@@ -185,7 +190,7 @@
     <body>
         <article>
             <header class="columns">
-                <div class="column" style="text-align: right; margin-left: 3.3em; margin-right: 1em;">
+                <div class="column" style="text-align: right; margin-left: 3em; margin-right: 1em;">
                     <h2>Rachel Fish</h2>
 
                     <div class="margin-around">
@@ -225,6 +230,7 @@
                         <li><span>Braintree</span></li>
                         <li><span>Linux</span></li>
                         <li><span>Nginx</span></li>
+                        <li><span>MySQL</span></li>
                     </ul>
 
                     <h4>Proficient In</h4>
@@ -239,6 +245,7 @@
                         <li><span>Cypress</span></li>
                         <li><span>Perl</span></li>
                         <li><span>Python</span></li>
+                        <li><span>Postgres</span></li>
                     </ul>
 
                     <h4>Knowledgeable Of</h4>
@@ -251,6 +258,7 @@
                         <li><span>React</span></li>
                         <li><span>Drupal</span></li>
                         <li><span>Apache</span></li>
+                        <li><span>Mongo</span></li>
                     </ul>
 
                     <img src="./img/servers.svg">
@@ -286,7 +294,9 @@
                         </div>
 
                         <p>
-                            Boy Casa sure was fun. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pellentesque mollis enim, at vulputate odio mollis sed. Praesent vestibulum tempor augue, vel egestas nulla commodo quis. In hac habitasse platea dictumst. Nam non tempor nunc.
+                            Built the UI for two hardware products.
+                            Developed an e-commerce checkout system which ensured all customer data was encrypted.
+                            Worked extensively with the Bitcoin Lightning network.
                         </p>
                     </div>
 
@@ -306,7 +316,9 @@
                         </div>
 
                         <p>
-                            Radar was okay. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pellentesque mollis enim, at vulputate odio mollis sed. Praesent vestibulum tempor augue, vel egestas nulla commodo quis. In hac habitasse platea dictumst. Nam non tempor nunc.
+                            Created APIs and data visualizations for real-time financial market data.
+                            Refactored existing back-end code to cache data for improved performance.
+                            Developed services to analyze the Ethereum blockchain and update orderbooks automatically.
                         </p>
                     </div>
 
@@ -322,11 +334,13 @@
                         </h4>
 
                         <div class="role">
-                            Full stack & devops
+                            Full-stack & devops
                         </div>
 
                         <p>
-                            Hello world. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pellentesque mollis enim, at vulputate odio mollis sed. Praesent vestibulum tempor augue, vel egestas nulla commodo quis. In hac habitasse platea dictumst. Nam non tempor nunc.
+                            Developed web and mobile applicaitons for clients.
+                            Worked closely with busniesses, creating tools to optimize their internal processes and engagement with customers.
+                            Managed cloud servers and load balancers for production sites with millions of users.
                         </p>
                     </div>
 
@@ -340,11 +354,13 @@
                         </h4>
 
                         <div class="role">
-                            Full stack & sysadmin
+                            Full-stack & sysadmin
                         </div>
 
                         <p>
-                            Hello world. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pellentesque mollis enim, at vulputate odio mollis sed.
+                            Designed websites for local businesses.
+                            Managed web servers and hosting for clients.
+                            Converted legacy systems from the 80s and 90s into modern web applications.
                         </p>
                     </div>
 
@@ -356,7 +372,7 @@
                         </h3>
 
                         <p>
-                            In addition to the work I do professionally, I maintain a number of open-source projects in my free time.
+                            In addition to the work I do professionally, I also maintain a number of open-source projects in my<br>free time.
                         </p>
                     </div>
 
@@ -374,7 +390,8 @@
                         </div>
 
                         <p>
-                            Hello world. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pellentesque mollis enim, at vulputate odio mollis sed.
+                            Developed a suite of event management software.
+                            Tracks decisions made by event organizers, onboarding for new users, business relationships, volunteers, and grant funding.
                         </p>
                     </div>
 
@@ -392,7 +409,9 @@
                         </div>
 
                         <p>
-                            Hello world. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pellentesque mollis enim, at vulputate odio mollis sed.
+                            A 3rd party client and automation tool for <i>Ragnarok Online</i>, a multiplayer online video game.
+                            Converted project from SVN to Git.
+                            Manage hosting for project documentation and support forum.
                         </p>
                     </div>
 
@@ -406,11 +425,13 @@
                         </h4>
 
                         <div class="role">
-                            Internet Mom
+                            CEO &amp; Project Manager
                         </div>
 
                         <p>
-                            Hello world. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pellentesque mollis enim, at vulputate odio mollis sed.
+                            Wetfish is an internet community for programmers and artists.
+                            (Who occasionally collaborate on projects.)
+                            Together we've built web applications for businesses and art installations for festivals.
                         </p>
                     </div>
                 </main>
