@@ -1,8 +1,9 @@
-# resume
+# Resume
 It's my resume
 
-# how to generate a pdf version
+# How to generate a pdf version
 ```
-DEBUG=electronpdf* electron-pdf https://wetfish.net/resume/ final.pdf --pageSize='{"width":242000,"height":525000}'
-pdftk final.pdf cat 1 output final-edited.pdf
+Open index.html in a web browser
+Print to PDF
+pdfcrop original-resume.pdf cropped-resume.pdf
 ```
